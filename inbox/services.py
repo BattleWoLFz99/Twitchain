@@ -22,7 +22,7 @@ class NotificationService(object):
             notify.send(
                 like.user,
                 recipient=target.user,
-                verb='commented your comment',
+                verb='liked your comment',
                 target=target,
             )
 
