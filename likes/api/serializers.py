@@ -1,4 +1,3 @@
-
 from accounts.api.serializers import UserSerializerForLike
 from comments.models import Comment
 from django.contrib.contenttypes.models import ContentType
