@@ -12,6 +12,9 @@ class NewsFeedViewSet(viewsets.GenericViewSet):
     permission_classes = [IsAuthenticated]
     pagination_class = EndlessPagination
 
+    def get_queryset(self):
+        return NewsFeed.objects.filter(user=self.request.user)
+
     @method_decorator(ratelimit(key='user', rate='5/s', method='GET', block=True))
     def list(self, request):
         cached_newsfeeds = NewsFeedService.get_cached_newsfeeds(request.user.id)
