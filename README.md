@@ -11,6 +11,6 @@ You need to setup HBase manually after branch 41
 sudo bash bin/start-hbase.sh
 ```
 You also need HBase thrift
-``````
+```
 bin/hbase-daemon.sh start thrift
 ```
