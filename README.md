@@ -45,7 +45,7 @@ Deploy to AWS EC2:
 5. Deploy with Nginx is recommended
 
 
-Sample: http://184.169.246.167/(Work In Progress)
+Sample: http://184.169.246.167/ (Work In Progress)
 
 Testing user:  
 
