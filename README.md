@@ -46,3 +46,11 @@ Deploy to AWS EC2:
 
 
 Sample: http://3.101.89.80/ (Work In Progress)
+
+Testing user:  
+
+  username: test_user_1   
+  password: testuser_testuser
+
+  username: test_user_2  
+  password: testuser_testuser
