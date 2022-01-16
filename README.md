@@ -6,17 +6,17 @@ Initial Vagrant firstly
 
 Amazon S3 is used to store user avatar(branch 23)
 
-You need to install redis after branch 32
+Install redis after branch 32
 
-You need to run celery manually after branch 38 (check settings.py file)
+Run celery manually after branch 38 (check settings.py file)
 ```
 celery -A twitter worker -l INFO
 ```
-You need to setup HBase manually after branch 41
+Setup HBase manually after branch 41
 ```
 sudo bash bin/start-hbase.sh
 ```
-You also need HBase thrift
+HBase thrift
 ```
 bin/hbase-daemon.sh start thrift
 ```
@@ -24,7 +24,7 @@ bin/hbase-daemon.sh start thrift
 
 Deploy to AWS EC2:
 
-1. You need to have an AWS EC2 instance. The free version can only be used for testing, 1GB ram is not enough in real usage.
+1. The demo uses AWS EC2 instance, t2.micro or below can only be used for testing.
 
 2. Once the instance is up and running, modify /etc/ssh/sshd_config
    ```
@@ -47,8 +47,7 @@ Deploy to AWS EC2:
 
 Sample: http://54.219.184.225/ (Work In Progress)
 
-Testing user:  
-
+Users for Demo:
   username: test_user_1   
   password: testuser_testuser
 
